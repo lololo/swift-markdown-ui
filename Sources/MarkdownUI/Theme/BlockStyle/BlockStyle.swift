@@ -37,6 +37,8 @@ import SwiftUI
 /// ```
 ///
 /// ![](CustomBlockquote)
+///
+@available(macOS 12.0, *)
 public struct BlockStyle<Configuration> {
   private let body: (Configuration) -> AnyView
 
@@ -51,6 +53,7 @@ public struct BlockStyle<Configuration> {
   }
 }
 
+@available(macOS 12.0, *)
 extension BlockStyle where Configuration == Void {
   /// Creates a block style for a block with no content, like a thematic break.
   /// - Parameter body: A view builder that returns the customized block.

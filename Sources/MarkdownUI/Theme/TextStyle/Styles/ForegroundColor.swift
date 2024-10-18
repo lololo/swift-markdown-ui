@@ -1,6 +1,8 @@
 import SwiftUI
 
 /// A text style that sets the foreground color of the text.
+
+@available(macOS 12.0, *)
 public struct ForegroundColor: TextStyle {
   private let foregroundColor: Color?
 

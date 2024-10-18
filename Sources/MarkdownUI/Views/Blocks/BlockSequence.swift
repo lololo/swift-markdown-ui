@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(macOS 12.0, *)
 struct BlockSequence<Data, Content>: View
 where
   Data: Sequence,
@@ -50,12 +51,14 @@ where
   }
 }
 
+@available(macOS 12.0, *)
 extension BlockSequence where Data == [BlockNode], Content == BlockNode {
   init(_ blocks: [BlockNode]) {
     self.init(blocks) { $1 }
   }
 }
 
+@available(macOS 12.0, *)
 extension TextAlignment {
   fileprivate var alignment: Alignment {
     switch self {

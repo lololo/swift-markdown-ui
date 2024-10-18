@@ -99,6 +99,8 @@ import SwiftUI
 ///   }
 ///   // More block styles...
 /// ```
+
+@available(macOS 12.0, *)
 public struct Theme {
   /// The default text style.
   public var text: TextStyle = EmptyTextStyle()
@@ -199,6 +201,7 @@ public struct Theme {
   public init() {}
 }
 
+@available(macOS 12.0, *)
 extension Theme {
   /// Adds a default text style to the theme.
   /// - Parameter text: A text style builder that returns the default text style.
@@ -249,6 +252,7 @@ extension Theme {
   }
 }
 
+@available(macOS 12.0, *)
 extension Theme {
   /// Adds a level 1 heading style to the theme.
   /// - Parameter body: A view builder that returns a customized level 1 heading.
@@ -457,6 +461,7 @@ extension Theme {
   }
 }
 
+@available(macOS 12.0, *)
 extension Theme {
   /// The text background color of the theme extracted from the ``Theme/text`` style.
   public var textBackgroundColor: Color? {

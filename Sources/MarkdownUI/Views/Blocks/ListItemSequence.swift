@@ -1,5 +1,7 @@
 import SwiftUI
 
+
+@available(macOS 12.0, *)
 struct ListItemSequence: View {
   private let items: [RawListItem]
   private let start: Int

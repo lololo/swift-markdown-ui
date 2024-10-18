@@ -1,5 +1,7 @@
 import SwiftUI
 
+
+@available(macOS 12.0, *)
 struct TaskListView: View {
   @Environment(\.theme.list) private var list
   @Environment(\.listLevel) private var listLevel

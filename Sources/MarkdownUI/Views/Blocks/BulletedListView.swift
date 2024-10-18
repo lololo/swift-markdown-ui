@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(macOS 12.0, *)
 struct BulletedListView: View {
   @Environment(\.theme.list) private var list
   @Environment(\.theme.bulletedListMarker) private var bulletedListMarker

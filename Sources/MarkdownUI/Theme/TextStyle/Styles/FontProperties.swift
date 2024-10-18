@@ -1,6 +1,8 @@
 import SwiftUI
 
 /// The characteristics of a font.
+
+@available(macOS 12.0, *)
 public struct FontProperties: Hashable {
   /// The font family.
   public enum Family: Hashable {
@@ -182,6 +184,8 @@ public struct FontProperties: Hashable {
   }
 }
 
+
+@available(macOS 12.0, *)
 extension FontProperties: TextStyle {
   public func _collectAttributes(in attributes: inout AttributeContainer) {
     attributes.fontProperties = self

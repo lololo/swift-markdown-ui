@@ -1,5 +1,7 @@
 import SwiftUI
 
+
+@available(macOS 12.0, *)
 extension Font {
   static func withProperties(_ fontProperties: FontProperties) -> Font {
     var font: Font

@@ -1,6 +1,8 @@
 import SwiftUI
 
 /// A text style that sets the strikethrough line style of the text.
+
+@available(macOS 12.0, *)
 public struct StrikethroughStyle: TextStyle {
   private let lineStyle: Text.LineStyle?
 

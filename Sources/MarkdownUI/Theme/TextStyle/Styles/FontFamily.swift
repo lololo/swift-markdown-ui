@@ -1,6 +1,8 @@
 import Foundation
 
 /// A text style that sets the text font family.
+///
+@available(macOS 12.0, *)
 public struct FontFamily: TextStyle {
   private let family: FontProperties.Family
 

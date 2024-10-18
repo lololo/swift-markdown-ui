@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(macOS 12.0, *)
 extension EnvironmentValues {
   var baseURL: URL? {
     get { self[BaseURLKey.self] }

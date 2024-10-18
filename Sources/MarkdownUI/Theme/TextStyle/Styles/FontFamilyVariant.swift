@@ -1,6 +1,8 @@
 import Foundation
 
 /// A text style that adjusts the font to use an alternate variant.
+
+@available(macOS 12.0, *)
 public struct FontFamilyVariant: TextStyle {
   private let familyVariant: FontProperties.FamilyVariant
 

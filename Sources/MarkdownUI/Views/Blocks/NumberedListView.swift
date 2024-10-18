@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(macOS 12.0, *)
 struct NumberedListView: View {
   @Environment(\.theme.list) private var list
   @Environment(\.theme.numberedListMarker) private var numberedListMarker

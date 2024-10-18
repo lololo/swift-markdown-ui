@@ -1,6 +1,8 @@
 import Foundation
 
 /// A text style that sets the spacing, or kerning, between the characters of the text.
+
+@available(macOS 12.0, *)
 public struct TextKerning: TextStyle {
   private let kern: CGFloat?
 
